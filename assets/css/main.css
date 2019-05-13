@@ -61,6 +61,10 @@ body.dark{
     position: fixed;
 }
 
+.logo {
+    width: 350px;
+}
+
 .wrapper {
     align-items: center;
     padding: 0px;
@@ -104,32 +108,56 @@ div.content{
     font-weight: 700;
 }
 
-@media (min-width: 480px) {
+@media (max-width: 480px) {
     .content {
         width: 460px;
     }
 
     .logo {
-        width: 350px;
+        width: 250px;
     }
 
     .title{
-        font-size: 30px;
+        font-size: 24px;
         margin-top: 5px;
         text-transform: uppercase;
         letter-spacing: 3px;
     }
     .description{
         margin-top: 10px;
-        font-size: 14px;
+        font-size: 7px;
+    }
+}
+
+@media (max-width: 767px) {
+    .wrapper{
+        padding: 0 0 80px 0;
+        height: 100vh;
+    }
+    .logo {
+        width: 300px;
+    }
+    div.content {
+        width: 610px;
+    }
+    .title{
+        font-size: 26px;
+        margin-top: 5px;
+        text-transform: uppercase;
+    }
+    .description{
+        margin-top: 10px;
+        font-size: 10px;
     }
 }
 
 @media (min-width: 768px) {
     .wrapper{
-        /*padding: 140px 0 80px 0;*/
         padding: 0 0 80px 0;
         height: 100vh;
+    }
+    .logo {
+        width: 350px;
     }
     div.content {
         width: 610px;
