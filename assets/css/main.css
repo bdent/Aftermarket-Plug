@@ -103,7 +103,13 @@ div.content{
     margin-bottom: 0;
 }
 
-.dark .title, .dark .description{
+.title-2 {
+    font-size: 20px;
+    letter-spacing: .2em;
+    margin-bottom: 0;
+}
+
+.dark .title, .dark .description, .dark .title-2 {
     color: #ffffff;
     font-weight: 700;
 }
@@ -127,6 +133,11 @@ div.content{
         margin-top: 10px;
         font-size: 7px;
     }
+    
+    .title-2 {
+        margin-top: 10px;
+        font-size: 16px;
+    }
 }
 
 @media (max-width: 767px) {
@@ -149,6 +160,10 @@ div.content{
         margin-top: 10px;
         font-size: 10px;
     }
+    .title-2 {
+        margin-top: 10px;
+        font-size: 18px;
+    }
 }
 
 @media (min-width: 768px) {
@@ -170,6 +185,10 @@ div.content{
     .description{
         margin-top: 10px;
         font-size: 14px;
+    }
+    .title-2{
+        margin-top: 10px;
+        font-size: 22px;
     }
 }
 
