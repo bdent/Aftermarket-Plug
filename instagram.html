@@ -22,16 +22,21 @@
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <!--<script async src="https://www.googletagmanager.com/gtag/js?id=UA-141578148-1"></script>-->
 <script>
-	document.addEventListener("DOMContentLoaded", function(){
+
+	var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+
+	if (isMobile) {
+		window.location.replace("instagram://user?username=ljsupplyuk");
+	} else {
+		window.location.replace("http://instagram.com/ljsupplyuk");
+	}
+
+	/*document.addEventListener("DOMContentLoaded", function(){
 	
 		var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
-		if (isMobile) {
-			window.location.replace("instagram://user?username=ljsupplyuk");
-		} else {
-			window.location.replace("http://instagram.com/ljsupplyuk");
-		}
+		
 	
-	});
+	});*/
 </script>
 </body>
 </html>
